@@ -3,7 +3,7 @@ package btcutil
 import (
 	"strings"
 	"github.com/pkg/errors"
-	"github.com/hawkit/btcutil-demo/chaincfg"
+	"btcd-demo/chaincfg"
 )
 
 // Address is an interface type for any type of destination a transaction
