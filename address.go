@@ -1,9 +1,9 @@
 package btcutil
 
 import (
-	"btcd-demo/chaincfg"
 	"strings"
 	"github.com/pkg/errors"
+	"github.com/hawkit/btcutil-demo/chaincfg"
 )
 
 // Address is an interface type for any type of destination a transaction
@@ -52,7 +52,10 @@ func DecodeAddress(addr string, defaultNet *chaincfg.Params) (Address, error) {
 	// a segwit address.
 	oneIndex := strings.LastIndexByte(addr, '1')
 	if oneIndex > 1 {
-		//prefix := addr[:oneIndex+1]
+		prefix := addr[:oneIndex+1]
+		if chaincfg.IsBech32SegwitPrefix(prefix) {
+
+		}
 
 	}
 
