@@ -1,6 +1,10 @@
 package btcutil
 
-import "btcd-demo/chaincfg"
+import (
+	"btcd-demo/chaincfg"
+	"strings"
+	"github.com/pkg/errors"
+)
 
 // Address is an interface type for any type of destination a transaction
 // output may spend to. This includes pay-to-pubkey (P2PK), pay-to-pubkey-hash
@@ -31,5 +35,28 @@ type Address interface {
 	// IsForNet returns whether or not the address is associated with the
 	// passed bitcion network.
 	IsForNet(params * chaincfg.Params)bool
+
+}
+
+// DecodeAddress decodes the string encoding of an address and returns
+// the Address if addr is a valide encoding for a known address type.
+//
+// The bitcoin network the address is associated with is extracted if possible.
+// When the address does not encode the network, such as in the case of a raw
+// public key, the address will be associcated with the passed defaultNet
+func DecodeAddress(addr string, defaultNet *chaincfg.Params) (Address, error) {
+	// Bech32 encoded segwit address start with a human-readable part
+	// (hrp) followed by '1'. For Bitcoin mainet the hrp is "bc", and for
+	// testnet it is "tb". If the address string has a prefix that matches
+	// one of the prefixes for the known networks, we try to decode it as
+	// a segwit address.
+	oneIndex := strings.LastIndexByte(addr, '1')
+	if oneIndex > 1 {
+		//prefix := addr[:oneIndex+1]
+
+	}
+
+	return nil, errors.New("decoded address is of unknown size")
+
 
 }
