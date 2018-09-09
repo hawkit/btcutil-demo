@@ -2,12 +2,16 @@
 
 
 [[projects]]
-  branch = "loadconfig"
-  digest = "1:ba95beec6b66555c2e19bb9cb82cd506c7957652454bc56db4b65a927d7d1fe3"
+  branch = "master"
+  digest = "1:57a3361a34c90264d74668c9f29f6c501c746f38459768b6aac25b989c01ca71"
   name = "github.com/hawkit/btcd-demo"
-  packages = ["chaincfg"]
+  packages = [
+    "chaincfg",
+    "chaincfg/chainhash",
+    "wire",
+  ]
   pruneopts = "UT"
-  revision = "6b6f7af9206386ae5ebb9847cbc10a90bc669236"
+  revision = "ceec5cf624b56b8f6e395016a57f161bb74eb572"
 
 [[projects]]
   digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
@@ -22,6 +26,8 @@
   analyzer-version = 1
   input-imports = [
     "github.com/hawkit/btcd-demo/chaincfg",
+    "github.com/hawkit/btcd-demo/chaincfg/chainhash",
+    "github.com/hawkit/btcd-demo/wire",
     "github.com/pkg/errors",
   ]
   solver-name = "gps-cdcl"
