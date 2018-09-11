@@ -2,8 +2,8 @@
 
 
 [[projects]]
-  branch = "master"
-  digest = "1:57a3361a34c90264d74668c9f29f6c501c746f38459768b6aac25b989c01ca71"
+  branch = "database"
+  digest = "1:c7dfefb4317ae3b785c66a2b57d4b4fa0f54dc80e6461e9ae0fbde85ddf881a6"
   name = "github.com/hawkit/btcd-demo"
   packages = [
     "chaincfg",
@@ -11,7 +11,7 @@
     "wire",
   ]
   pruneopts = "UT"
-  revision = "ceec5cf624b56b8f6e395016a57f161bb74eb572"
+  revision = "5863aeb32d36ac6e3d77d95de1c0335ff410a1ff"
 
 [[projects]]
   digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"

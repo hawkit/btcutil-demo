@@ -26,7 +26,7 @@
 
 
 [[constraint]]
-  branch = "master"
+  branch = "database"
   name = "github.com/hawkit/btcd-demo"
 
 [[constraint]]
