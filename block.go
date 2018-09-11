@@ -44,3 +44,13 @@ func (b *Block) Bytes() ([]byte, error)  {
 	return serailzedBlock, nil
 
 }
+
+func (b *Block) Hash() *chainhash.Hash {
+	if b.blockHash != nil {
+		return b.blockHash
+	}
+	// Cache the block hash and return it.
+	hash := b.MsgBlock.BlockHash()
+	b.blockHash = hash
+	return  &hash
+}
