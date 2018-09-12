@@ -51,6 +51,6 @@ func (b *Block) Hash() *chainhash.Hash {
 	}
 	// Cache the block hash and return it.
 	hash := b.MsgBlock.BlockHash()
-	b.blockHash = hash
+	b.blockHash = &hash
 	return  &hash
 }
