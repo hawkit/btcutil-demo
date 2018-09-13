@@ -3,18 +3,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:e6b9b9d6ee6cdaa6ffb0aa5a8c078f7fc8242a0183d88fc79f29a6777fa530bf"
-  name = "github.com/btcsuite/btcd"
-  packages = [
-    "chaincfg/chainhash",
-    "wire",
-  ]
-  pruneopts = "UT"
-  revision = "cff30e1d23fc9e800b2b5b4b41ef1817dda07e9f"
-
-[[projects]]
-  branch = "database"
-  digest = "1:70db87459dd6ad022b71703cfb3503a5275e84cdaf0b8f4bb5581679631ff5d8"
+  digest = "1:19ab38a56da2c023b331ffee4e7e3610f1191aeab11baee6a135a84d7d2ae8a0"
   name = "github.com/hawkit/btcd-demo"
   packages = [
     "chaincfg",
@@ -22,7 +11,7 @@
     "wire",
   ]
   pruneopts = "UT"
-  revision = "7d1e13b0a98b34d865f177970bf805e473dbdf6a"
+  revision = "245511072044cfdc42c3cda2c739e5b68f1e0969"
 
 [[projects]]
   digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
