@@ -26,8 +26,8 @@
 
 
 [[constraint]]
-  branch = "master"
   name = "github.com/hawkit/btcd-demo"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/pkg/errors"
